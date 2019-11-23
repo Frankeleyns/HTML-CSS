@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素</title>
+    <style>
+        
+        /*
+        * 为p中的第一个字符设置样式
+        */
+        /* p:first-letter {
+            color: red;
+            font-size: 20px;
+        } */
+
+        /*
+        * 为p中的第一行设置样式
+        */
+        /* p:first-line {
+            background-color: yellow;
+        } */
+
+        /*
+        * ::before表示元素最前面的部分(啥都没有)，
+        * 所以，before一般都需要结合content这个样式一起使用.
+        * 通过content可以向before或after的位置添加一些内容
+        */
+        /* p:before{
+            color:red;
+            content:"我出现在段落最前面";
+        } */
+        
+        /*
+        * 表示元素后面的部分，用法和before一样
+        */
+        p:after{
+            color:orange;
+            content:"我出现在段落最后面";
+        }
+
+    </style>
+</head>
+
+<body>
+    <p> “魏无羡死了。大快人心！”
+        乱葬岗大围剿刚刚结束，未及第二日，这个消息便插翅一般飞遍了整个修真界，比之当初战火蔓延的速度有过之而无不及。
+        一时之间，无论是世家名门，还是山野散修，人人都在议论此次由四大玄门世家联率、大小百家参与混战的围剿行动。
+    </p>
+</body>
+
+</html>
