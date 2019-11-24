@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>子元素选择器</title>
+
+    <style>
+        /*
+        * 为第一个p标签设置样式
+        */
+        /* body > p:first-child{
+            background-color: yellow;
+        } */
+
+
+        /*
+        * 为最后一个p标签设置样式
+        */
+        /* p:last-child{
+            background-color:red;
+        } */
+
+        /*
+        * 选中第n个子元素
+        * odd：奇数  even：偶数
+        */
+        /* p:nth-child(odd){
+            background: blue;
+        } */
+
+        /*
+        * 选中第一个p类型的子元素
+        * first-of-type、last-of-type、nth-of-type
+        * 用法和child一样，child会选取所有子元素排列中的一个
+        * of-type则是选取当前类型子元素的一个
+        */
+        p:first-of-type{
+            background-color: orange;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <span>我是一行</span>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+
+
+
+</body>
+</html>
