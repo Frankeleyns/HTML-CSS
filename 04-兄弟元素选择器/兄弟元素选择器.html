@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兄弟元素选择器</title>
+</head>
+
+<style>
+
+    /*
+    * 选中span后的一个p标签
+    * 作用：选中一个元素后紧挨着的指定的兄弟元素
+    * 语法: 前元素 + 后一个元素
+    *  
+    */
+    /* span + p {
+        background-color:yellow;
+    } */
+
+    /*
+    * 选中span后面的所有p标签
+    * 作用：选中一个元素后的所有元素
+    * 语法：前一个 ~ 后所有元素
+    */
+    span ~ p {
+        background-color:red;
+    }
+
+</style>
+
+<body>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <span>我是一个span</span>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+
+</body>
+</html>

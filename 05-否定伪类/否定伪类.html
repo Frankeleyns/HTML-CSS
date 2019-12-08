@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>否定伪类选择器</title>
+</head>
+
+<style>
+    /*
+    * 选中所有p元素，除了class为hello的
+    * 作用：从已选元素中踢除不需要的
+    * 语法： :not(选择器)
+    */
+    p:not(.hello){
+        background-color:yellow;
+    }
+</style>
+
+<body>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p class="hello">我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+
+</body>
+</html>
