@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>样式继承</title>
+</head>
+
+ <style>
+     
+ </style>
+<body>
+    <!--
+         像儿子继承父亲遗产一样，在css中，祖先元素上的样式，也会被他的后代元素继承 
+         利用继承，可以将一些基本的样式设置给组先元素，这样所有的后代元素将会自动继承这些样式。
+
+         但并不是所有的样式都会被继承，比如：背景相关的样式都不会被继承，边框和定位相关也不会
+    -->
+
+    <div style="font-size: 30px;">
+        <p >
+            我是p标签中的文字
+            <span>我是P元素中的span</span>
+        </p>
+    </div>
+
+ 
+    <span>我是p元素外的span</span>
+
+</body>
+</html>
