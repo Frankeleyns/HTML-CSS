@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器的优先级</title>
+</head>
+
+<style>
+    .p1{
+        background-color: yellow;
+    }
+
+    p{
+        background-color: red !important;
+    }
+
+    #p2{
+        background-color:yellowgreen;
+    }
+
+    p#p2{
+        background-color: orange;
+    }
+
+    /*  当使用不同的选择器，选中同一个元素并设置相同的样式时， 
+     *  这时会产生冲突，最终显示哪个样式，由选择器的优先级决定
+     *
+     *  优先级：
+     *      内联样式：1000
+     *      id选择器：100
+     *      类和伪类：10
+     *      元素选择器：1
+     *      
+     *  可以在样式后加一个!important，则此样式的优先级高于所有样式，甚至超过内联样式
+     *
+     */
+
+</style>
+<body>
+    <p class="p1" id="p2" style="background-color: skyblue">我是一个段落</p>
+</body>
+</html>
